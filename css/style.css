@@ -35,6 +35,7 @@ div.menu-top {
 		background-color: #eeeeee;
 		border-top: 1px solid #ddd;
 		border-bottom-width: 0px;
+        border-color: #f3f3f3;
 	}
     .navbar .dropdown .glyphicon{
     margin-right: 10px;
@@ -111,12 +112,13 @@ section#slidedenoticias div.urgente {
 		font-weight: 600;
     }
 
-div.destaque {
+.content-slider-obras {
     position: relative;
 }
 
-    div.destaque .minuta {
-        position: absolute;
+    .content-slider-obras .minuta {
+        color: #fff;
+        position: relative;
         bottom: 0px;
         padding: 10px;
         width: 100%;
@@ -127,11 +129,11 @@ div.destaque {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
     }
 
-        div.destaque .minuta h1, div.destaque .minuta h4 {
+        .content-slider-obras .minuta h1, div.destaque .minuta h4 {
             color: #fff;
         }
 
-        div.destaque .minuta span {
+        .content-slider-obras .minuta span {
             color: #fff;
             font-size: 0.8em;
         }
@@ -253,7 +255,7 @@ section#conteudo div.titulo-vermelho {
     }
 
 section#conteudo .noticia {
-    margin: 30px 0 10px 0;
+    margin: 15px 0 10px 0;
 	border: 1px solid #eeeeee;
     padding-bottom: 10px;
 }
@@ -414,11 +416,11 @@ section#mais-lidas {
     display: inline-block;
 }
 section#servicos {
-    margin: 60px 0px;
+    margin: 30px 0px;
 }
 
 section#conheca {
-    margin: 60px 0px;
+    margin: 30px 0px;
 }
 
 .box-conheca {
@@ -547,7 +549,7 @@ section#newsletter {
 
 section#rodape {
     padding-top: 20px;
-    background: #086ac3 none repeat scroll 0 0;
+    background: #f3f3f3 none repeat scroll 0 0;
 }
 
     section#rodape ul {
@@ -555,7 +557,7 @@ section#rodape {
     }
 
         section#rodape ul span {
-            color: #fcb92d;
+            color: #086ac3;
             font-weight: bold;
             display: block;
             margin-bottom: 10px;
@@ -567,7 +569,7 @@ section#rodape {
         }
 
             section#rodape ul li a {
-                color: #fff;
+                color: #333;
                 font-weight: bold;
                 font-size: 12px;
             }
@@ -1039,16 +1041,11 @@ div.video span.video-info {
     height: 12px;
     margin-right: 5px;
 }
-/**************Mapa de Obras********************/
-.carousel-indicators {
-bottom: 0px;
-left: 15px;
-margin-left: 0%; 
-width: auto;
+/**************Galeria de Obras********************/
+section#galeriadeobras {
+    margin: 30px 0 0 0;
 }
-.carousel-indicators .active {
-background-color: #F1C004;
-}
+
 /***********Página de erro 404******************/
 .paginas-erro {
     margin: 50px auto;
@@ -1381,6 +1378,10 @@ span.titfalecom {
 .tabsdocumentos .list-group{
     width: 100%;
 }
+.tabsdocumentos .col-md-8, .tabsdocumentos .col-sm-12, .tabsdocumentos .col-md-4,.tabsdocumentos .col-sm-12{
+    padding-right: 0px;
+    padding-left: 0px;
+}
 
 .tabsdocumentos .glyphicon p{
 float: right;
@@ -1464,3 +1465,81 @@ section#galeria .galerias {
     #servicos-prestados{
         margin-top: 30px;
     }
+    .imgfit {
+    object-fit: cover;
+    object-position: 0 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+}
+#slidedenoticias .noticia img{
+        width: 100%;
+    height: 160px;
+}
+/*Busca site topo*/
+.container-form .formBusca {
+    float: right;
+    margin-top: 35px;
+    position: relative;
+}
+.formBusca .inputText {
+    float: left;
+    width: 150px;
+    height: 37px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    padding: 9px;
+}
+.formBusca .buttonSubmit {
+    float: left;
+    width: 50px;
+    height: 37px;
+    font-size: 16px;
+    background-color: #086ac3;
+    color: #fff;
+    border: 1px solid #eeeeee;
+}
+.formBusca .icon-search {
+    font-size: 20px;
+}
+
+/*Busca site transparencia*/
+.container-form .formBusca-transp {
+    float: right;
+    margin-top: 35px;
+    position: relative;
+}
+.formBusca-transp .inputText {
+    float: left;
+    width: 100%;
+    height: 37px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 30px;
+}
+.formBusca-transp .buttonSubmit {
+    float: left;
+    width: 50px;
+    height: 37px;
+    font-size: 16px;
+    background-color: #086ac3;
+    color: #fff;
+    border: 1px solid #eeeeee;
+}
+.formBusca-transp .icon-search {
+    font-size: 20px;
+}
+/*Tabs customizada*/
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+.nav-tabs > li > a {
+    border-radius: 0px 0px 0 0;
+}
