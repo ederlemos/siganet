@@ -90,3 +90,6 @@ $(window).load(function() {
 	$('#myCarousel .list-group-item').outerHeight(triggerheight);
 });
 /*fim slider*/
+/*tabs*/
+
+/*fim tabs*
